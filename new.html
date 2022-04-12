@@ -23,7 +23,7 @@
 	<!-- form element below -->
 
 	<div class="form">
-		<form action="insert.php" method="POST">
+		<form>
 			<label>EMAIL: &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="email" name="email"  placeholder="EMAIL" required=""> <br><br>
 			<label>PASSWORD: &nbsp</label><input type="password" name="password" placeholder="********" required=""> <br><br>
 			<button type="submit"> LOG IN</button>
@@ -36,41 +36,7 @@
 	<div class="copyright">
 		<p>&copy; Anony.mr.azat</p>
 	</div>
-	<!-- <div class="table">
-		<table>
-			<tr>
-				<th>SN</th>
-				<th>NAME</th>
-				<th>ADDRESS</th>
-			</tr>
-						
-			<?php 
-        include 'connect.php';
-        $sql ="SELECT * FROM anony";
-
-        $result = mysqli_query ($conn, $sql);
-
-        if ($result) {
-            while ($row =mysqli_fetch_assoc($result)){
-                $id = $row ['id'];
-                $name = $row['name'];
-                $address = $row['address'];
-        ?>
-                <tr>
-                <td><?php echo $id ?></td>
-                <td><?php echo $name ?></td>
-                <td><?php echo $address ?></td>
-                
-                </tr>
-            
-        <?php
-            }
-        }
-         ?>
-		</table>
-
-
-	</div> -->
+	
 
 </body>
 </html>
